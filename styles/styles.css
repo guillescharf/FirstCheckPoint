@@ -47,7 +47,6 @@ input, textarea{
     padding: 3px;
 }
 button{
-
     border-radius: 5px;
     padding: 3px;
     width: 150px;
@@ -56,4 +55,17 @@ button{
 }
 button:hover, .currentSection{
     background-color: blue;
+}
+table{
+    border: 1px solid blue;
+    background-color: lightblue;
+    padding: 15px;
+    border-radius: 5px;
+}
+table th{
+    border-bottom: 2px solid blue;
+    margin-bottom: 100px;
+}
+.even{
+    background-color: rgb(6, 131, 214);
 }
