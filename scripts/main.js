@@ -12,7 +12,7 @@ function isEmailValid(email){
     if(emailParts.length !== 2){
         return false;
     }else{
-
+        const domainParts = emailParts[0]
         return true;
     }
 }
