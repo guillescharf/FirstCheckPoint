@@ -6,12 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact -- First Check Point of React Skill Factory by Avalith</title>
     <link rel="stylesheet" href="../styles/styles.css">
-    <script src="../scripts/main.js"></script>
+    <script src="../scripts/main.js"></script>    
 </head>
 <body>
     <div class="mainContainer">
         <div class="navBar">
             <button><a href="../index.html">Home</a></button>
+            <button><a href="../users.html">Users</a></button>
             <button><a href="../cards.html">Cards</a></button>
             <button><a href="../contact.html">Contact</a></button>
         </div>    
@@ -23,7 +24,7 @@
                 <input type="email" name="email" id="contactFormEmail" onblur="validateEmail();">
                 <label for="comments">Comments</label>
                 <textarea name="comments" id="contactFormComments" cols="30" rows="10"></textarea>  
-                <button id="contactFormReset" onclick="formReset();">Reset</button>  
+                <button id="contactFormReset" onclick="return(formReset());">Reset</button>  
                 <button id="contactFormSend" onclick="return(sendForm());">Send</button> 
             </form>
         </div>
