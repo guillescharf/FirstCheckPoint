@@ -17,10 +17,10 @@ const showmeData = (data) => {
   let body = ``;
   data.results.map(
     (item) =>
-      (body += `
-     <img src =${item.image}>
-     <h1>${item.name}</h1>
-     <h3>${item.status}</h3>`)
+      (body += `<div class="my-8  text-center">
+     <img  class =mx-40 src =${item.image}>
+     <h1 >${item.name}</h1>
+     <h3>${item.status}</h3> </div>`)
   );
   selector.innerHTML = body;
 };
