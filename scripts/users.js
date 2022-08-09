@@ -8,8 +8,6 @@ function showUsersData(data){
         itemClass = (i%2==0)?'even':'';
         let user = document.createElement('tr');
         user.className = itemClass;
-        
-
         user.innerHTML = `<td>${data[i].name} </td>
                           <td>${data[i].email} </td>
                           <td>${data[i].phone}</td>
