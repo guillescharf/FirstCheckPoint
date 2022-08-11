@@ -5,6 +5,10 @@
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
 }
 
+body {
+    background-image: url(https://raw.githubusercontent.com/ignacio2194/rickAndMorty-API/main/images/heic1909a.jpg);
+}
+
 a, a:hover, a:visited{
     text-decoration: none;
     color: black;
@@ -56,4 +60,8 @@ button{
 }
 button:hover, .currentSection{
     background-color: blue;
+}
+.div-tabla {
+    color: white;
+    font-size: 16px;
 }
