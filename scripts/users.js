@@ -17,6 +17,24 @@ function showUsersData(data){
     }
 }
 
-fetch(URL_USERS) // Infiere en que el pedido es un GET
-    .then((response) => response.json())
-    .then((data) => showUsersData(data)); 
+//  Traigo los datos con el metodo nativo fetch 
+function getUsersFetch(){
+    try{
+        fetch(URL_USERS) // Infiere en que el pedido es un GET
+        .then((response) => response.json())
+        .then((data) => showUsersData(data)); 
+    } catch(error){
+        console.log("Error", error);
+        console.log("Error Name", error.name);        
+    }
+}
+async function getUsersAsync(){
+    try {
+        const users = await axios.get(URL_USERS);
+        showUsersData(users.data);
+    } catch (error) {
+        console.log("Error", error);
+        console.log("Error Name", error.name);
+    }
+};
+getUsersFetch();    
