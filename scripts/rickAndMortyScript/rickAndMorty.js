@@ -13,14 +13,15 @@ const getData = async () => {
 getData();
 
 const showmeData = (data) => {
-  
+
   let body = ``;
   data.results.map(
     (item) =>
-      (body += `<div class="my-8  text-center">
-     <img  class =mx-40 src =${item.image}>
+    
+      (body += `<div class="mainContainer_character__contenido">
+    <div > <img  class =mx-40 src =${item.image}>  <h3 class ="mainContainer_character__contenido_status">${item.status}</h3></div>
      <h1 >${item.name}</h1>
-     <h3>${item.status}</h3>
+      <h3>${item.location.name}</h3>
   
      </div>`)
   );
