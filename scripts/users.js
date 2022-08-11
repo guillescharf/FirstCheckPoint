@@ -17,7 +17,7 @@ function showUsersData(data){
     }
 }
 
-<<<<<<< HEAD
+
 //  Traigo los datos con el metodo nativo fetch 
 function getUsersFetch(){
     try{
@@ -39,7 +39,7 @@ async function getUsersAsync(){
     }
 };
 getUsersFetch();    
-=======
+
 fetch(URL_USERS) // Infiere en que el pedido es un GET
     .then((response) => response.json())
     .then((data) => showUsersData(data)); 
@@ -68,7 +68,3 @@ const mostrarDatos = async () => {
 }
 mostrarDatos();
 
-
-
-
->>>>>>> 0384f79e2f3a9fb571d1d63a386c6b5278b0e865
