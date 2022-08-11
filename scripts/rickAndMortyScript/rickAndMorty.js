@@ -20,7 +20,9 @@ const showmeData = (data) => {
       (body += `<div class="my-8  text-center">
      <img  class =mx-40 src =${item.image}>
      <h1 >${item.name}</h1>
-     <h3>${item.status}</h3> </div>`)
+     <h3>${item.status}</h3>
+  
+     </div>`)
   );
   selector.innerHTML = body;
 };
