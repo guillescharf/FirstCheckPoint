@@ -34,12 +34,12 @@ const mostrarDatos = async () => {
     tabla.appendChild(fila) //aca meto cada fila creada a la tabla
 
     fila.innerHTML = `
-      <div><td>${personas.data[i].name}</td>
+      <td>${personas.data[i].name}</td>
       <td>${personas.data[i].id}</td>
       <td>${personas.data[i].email}</td>
       <td>${personas.data[i].phone}</td>
       <td>${personas.data[i].address.city}</td>
-      <td>${personas.data[i].company.name}</td></div>
+      <td>${personas.data[i].company.name}</td>
     `
   }
 }
